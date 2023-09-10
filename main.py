@@ -99,33 +99,3 @@ axes[1].tick_params(axis='x', rotation=45)
 # Adjust layout and display
 plt.tight_layout()
 plt.show()
-
-# -----------------------
-# 5. Geographical Patterns Analysis
-# -----------------------
-
-# This section provides a simplified representation using a heatmap. A more detailed choropleth map would require additional tools and data.
-
-# Create a dictionary mapping country names to latitude and longitude (center points)
-country_coordinates = {
-    'Afghanistan': [33.93911, 67.709953],
-    'China': [35.86166, 104.195397],
-    'India': [20.593684, 78.96288],
-    'Indonesia': [-0.789275, 113.921327],
-    'Russia': [61.52401, 105.318756],
-    # ... add more countries as needed
-}
-
-# Add latitude and longitude to our dataset
-latest_year_data['Latitude'] = latest_year_data['Country'].map(lambda x: country_coordinates.get(x, [None, None])[0])
-latest_year_data['Longitude'] = latest_year_data['Country'].map(lambda x: country_coordinates.get(x, [None, None])[1])
-
-# Plot heatmap
-plt.figure(figsize=(15, 7))
-sns.scatterplot(x='Longitude', y='Latitude', size='Data.Percentage.Total', hue='Data.Percentage.Total', 
-                sizes=(10, 200), data=latest_year_data, palette="YlGnBu", legend=False)
-plt.title('Geographical Patterns of Smoking Percentage (2012)')
-plt.xlabel('Longitude')
-plt.ylabel('Latitude')
-plt.grid(True, which='both', linestyle='--', linewidth=0.5)
-plt.show()
