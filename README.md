@@ -30,7 +30,7 @@ This repository contains an in-depth analysis of smoking trends across various c
 - **Suriname**: Individuals smoke approximately 108.9 cigarettes daily on average.
 - **Saint Vincent and the Grenadines**: Approximately 81.6 cigarettes daily.
 
-![Intensity Analysis](./%20Intensity.png)
+![Intensity Analysis](Images/Intensity.png)
 
 
 
