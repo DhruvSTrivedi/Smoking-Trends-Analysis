@@ -1,8 +1,8 @@
----
-
 # Smoking Trends Analysis (1980-2012)
 
 This repository contains an in-depth analysis of smoking trends across various countries from 1980 to 2012. The dataset provides insights into the daily cigarette consumption, gender-specific smoking percentages, and total smokers by country over the years.
+
+---
 
 ## Key Findings:
 
@@ -17,14 +17,17 @@ This repository contains an in-depth analysis of smoking trends across various c
   - **Canada**: Decreased by approximately 21.0 percentage points.
   - **Denmark**: Decreased by approximately 20.2 percentage points.
 
-![Image](Images/Trend_Analysis.png)
+![Trend Analysis](Images/Trend_Analysis.png)
 
+---
 
 ### 2. **Gender Disparity Analysis (2012)**:
 - **Sweden**: Male smokers exceed female smokers by approximately 1.2 percentage points.
 - **Ireland**: Female smokers exceed male smokers by approximately 0.5 percentage points.
 
-![Image](Images/Gender_Disparity.png)
+![Gender Disparity](Images/Gender_Disparity.png)
+
+---
 
 ### 3. **Intensity Analysis (2012)**:
 - **Suriname**: Individuals smoke approximately 108.9 cigarettes daily on average.
@@ -32,23 +35,39 @@ This repository contains an in-depth analysis of smoking trends across various c
 
 ![Intensity Analysis](Images/Intensity.png)
 
-
+---
 
 ### 4. **Absolute Numbers vs. Percentage Analysis (2012)**:
 - **China** has the highest number of smokers at approximately 281.7 million.
 - **Greece** has the highest percentage of smokers, with 31.3% of the population smoking.
-  
-![Image](Images/Numbers_Percentage.png)
+
+![Numbers vs. Percentage](Images/Numbers_Percentage.png)
+
+---
 
 ## Visualizations:
 The repository contains various visualizations that provide insights into the data and our findings. These charts are crafted carefully to ensure clarity and accuracy.
 
+---
+
 ## Dataset:
 The dataset used for this analysis is `smoking.csv`, which contains detailed data about smoking habits across countries from 1980 to 2012.
 
+---
+
 ## How to Use:
 1. Clone the repository.
+   ```bash
+   git clone <repository_url>
+   ```
 2. Navigate to the directory.
+   ```bash
+   cd smoking-trends-analysis
+   ```
 3. Open the Jupyter Notebook or Python script to view the analysis.
+   ```bash
+   jupyter notebook analysis.ipynb
+   ```
 
 ---
+
